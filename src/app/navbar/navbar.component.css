@@ -1,0 +1,26 @@
+/* Estilo para el fondo del navbar */
+.navbar-dark {
+    background-color: #000000; /* Fondo negro */
+  }
+  
+  /* Estilo para el color del texto en el navbar */
+  .navbar-dark .navbar-brand,
+  .navbar-dark .navbar-nav .nav-link {
+    color: #ffffff; /* Texto blanco */
+  }
+  
+  /* Estilo para el botón de búsqueda */
+  .navbar-dark .btn-outline-success {
+    color: #ffffff; /* Texto blanco */
+    border-color: #ffffff; /* Borde blanco */
+  }
+  
+  .navbar-dark .btn-outline-success:hover {
+    color: #000000; /* Texto negro al pasar el mouse */
+    background-color: #ffffff; /* Fondo blanco al pasar el mouse */
+  }
+  
+  .navbar-dark .btn-outline-success:focus {
+    box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.5); /* Sombra al enfocar */
+  }
+  
