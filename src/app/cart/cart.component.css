@@ -1,0 +1,103 @@
+.cart {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.cart h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  background: white;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.cart-item:hover {
+  transform: scale(1.02);
+}
+
+.cart-item-image {
+  width: 100px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.cart-item-details {
+  flex-grow: 1;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.cart-item-details h5 {
+  font-size: 1.2rem;
+  margin: 0;
+  color: #34495e;
+}
+
+.cart-item-details p {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  margin: 5px 0;
+}
+
+/* Botones de cantidad */
+.cart-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantity-btn {
+  background: #27ae60;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.quantity-btn:hover {
+  background: #219150;
+}
+
+.remove-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.remove-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Total del carrito */
+.cart-total {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Contenedor del botón de PayPal */
+#paypal-button-container {
+  margin-top: 20px;
+}

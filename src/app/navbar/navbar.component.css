@@ -1,6 +1,6 @@
 /* Estilo para el fondo del navbar */
 .navbar-dark {
-    background-color: #000000; /* Fondo negro */
+    background-color: #8c61a8; /* Fondo negro */
   }
   
   /* Estilo para el color del texto en el navbar */
@@ -16,7 +16,7 @@
   }
   
   .navbar-dark .btn-outline-success:hover {
-    color: #000000; /* Texto negro al pasar el mouse */
+    color: #8c61a8; /* Texto negro al pasar el mouse */
     background-color: #ffffff; /* Fondo blanco al pasar el mouse */
   }
   

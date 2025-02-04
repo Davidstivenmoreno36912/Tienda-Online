@@ -1,0 +1,142 @@
+body {
+    background-color: #ff0000; /* Rojo fuerte */
+}
+
+.container {
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff; /* Tarjetas blancas */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s; /* Efecto de transición */
+    height: 900px; /* Establecer una altura fija */
+    display: flex; /* Usar flexbox para alinear contenido */
+    flex-direction: column; /* Alinear contenido en columna */
+}
+
+.card-body {
+    flex-grow: 1; /* Permitir que el contenido ocupe el espacio restante */
+    display: flex; /* Usar flexbox para alinear contenido */
+    flex-direction: column; /* Alinear contenido en columna */
+    justify-content: space-between; /* Espacio entre elementos */
+    padding: 15px; /* Espaciado interno ajustado */
+}
+
+.card-title {
+    color: #6f42c1; /* Morado para títulos */
+    margin-top: 0; /* Eliminar margen superior */
+    margin-bottom: 10px; /* Margen inferior reducido */
+}
+
+.card h3 {
+    margin-top: 5px; /* Margen superior ajustado */
+    margin-bottom: 5px; /* Margen inferior ajustado */
+}
+
+.card-text {
+    margin: 5px 0; /* Espaciado uniforme para el texto del párrafo */
+}
+
+.card ul {
+    list-style-type: disc;
+    margin-left: 10px;
+    text-align: left;
+}
+
+.text-center {
+    text-align: center; /* Centrar texto */
+}
+
+.video-container {
+    text-align: center; /* Centrar video */
+}
+
+/* Media Queries para ajustar el espaciado en pantallas pequeñas */
+@media (max-width: 768px) {
+    .card-body {
+        padding: 10px; /* Menos espaciado en pantallas pequeñas */
+    }
+
+    .card-title {
+        margin-bottom: 8px; /* Ajuste en pantallas pequeñas */
+    }
+
+    .card h3 {
+        margin-top: 4px; /* Ajuste en pantallas pequeñas */
+        margin-bottom: 4; /* Ajuste en pantallas pequeñas */
+    }
+
+    .card-text {
+        margin: 3px 0; /* Reducir el espaciado para el texto en pantallas pequeñas */
+    }
+}
+
+.divider {
+    height: 4px; /* Altura de la barra */
+    background-color: #6f42c1; /* Color de la barra */
+    margin: 20px 0; /* Espacio arriba y abajo de la barra */
+}
+
+.divider2 {
+    height: 100px; /* Altura de la barra */
+    background-color: #6f42c1; /* Color de la barra */
+    margin: 20px 0; /* Espacio arriba y abajo de la barra */
+}
+
+.center-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrar verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    min-height: 200px; /* Altura mínima del contenedor */
+    text-align: center; /* Alinear el texto */
+}
+.card-body {
+    text-align: center;
+}
+
+.card-title i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    display: block;
+}
+
+
+.btn-success {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+}
+
+.btn-success i {
+    margin-right: 8px;
+}
+.full-width-image {
+    width: 100vw;  /* Ocupar todo el ancho de la pantalla */
+    height: 300px; /* Altura fija */
+    overflow: hidden;
+    margin: 0; 
+    padding: 0;
+    display: flex;
+    justify-content: flex-start; /* Asegurar que el contenido inicie desde la izquierda */
+    align-items: center;
+    position: relative; /* Evita que Bootstrap lo afecte */
+    left: 0; /* Pegar al margen izquierdo */
+}
+
+.full-width-image img {
+    width: 100%; /* Que la imagen ocupe todo el div */
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.full-width-image {
+    width: 100vw !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: absolute !important;
+    left: 0 !important;
+}

@@ -1,4 +1,29 @@
-<div class="container">
-    <!-- Aquí irá el código para mostrar el carrito de compras -->
+<div class="cart">
+  <h2>Tu carrito</h2>
+
+  <div *ngFor="let item of cartItems" class="cart-item">
+    <img [src]="item.imageUrl" alt="{{ item.name }}" class="cart-item-image">
+    
+    <div class="cart-item-details">
+      <h5>{{ item.name }}</h5>
+      <p>{{ item.description }}</p>
+      <p>Precio: {{ item.price | currency }}</p>
+    </div>
+
+    <!-- Botones para modificar cantidad -->
+    <div class="cart-actions">
+      <button class="quantity-btn" (click)="decreaseQuantity(item)">-</button>
+      <span>{{ item.quantity }}</span>
+      <button class="quantity-btn" (click)="increaseQuantity(item)">+</button>
+      <button class="remove-btn" (click)="removeItem(item)">Eliminar</button>
+    </div>
   </div>
-  
+
+  <!-- Mostrar el total del carrito -->
+  <div class="cart-total">
+    <h4>Total: {{ totalAmount | currency }}</h4>
+  </div>
+
+  <!-- Botón de PayPal -->
+  <div id="paypal-button-container"></div>
+</div>

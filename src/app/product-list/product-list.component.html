@@ -1,15 +1,9 @@
+<!-- product-list.component.html -->
 <div class="container">
-  <h2>Productos Disponibles</h2>
+  <h2 class="titulo"> SALUD VITAL </h2>
   <div class="row">
-    <div class="col-md-4 mb-3" *ngFor="let product of products">
-      <div class="card">
-        <img [src]="product.imageUrl" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">{{ product.name }}</h5>
-          <p class="card-text">{{ product.description }}</p>
-          <p class="card-text">Precio: {{ product.price }}</p>
-        </div>
-      </div>
+    <div class="col-md-4" *ngFor="let product of products">
+      <app-product-card [product]="product"></app-product-card>
     </div>
   </div>
 </div>

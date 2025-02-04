@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+/* Puedes agregar estilos globales a este archivo y también importar otros archivos de estilo */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2c0f8;
+}
+
+.navbar {
+  background-color: #99228f;
+  padding: 1rem;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* Evita desplazamiento horizontal */
+}
+
