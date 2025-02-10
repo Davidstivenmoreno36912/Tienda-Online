@@ -18,7 +18,7 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
 
-            "baseHref": "/tienda-online/",
+            
 
             "outputPath": "dist/tienda-online",
             "index": "src/index.html",
