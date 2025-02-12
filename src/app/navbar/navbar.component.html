@@ -1,28 +1,19 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark ">
   <div class="container-fluid">
-    <!-- Enlace a la página de inicio -->
-    <a class="navbar-brand" href="/">Tienda Online</a>
-    
-    <!-- Botón para el menú en dispositivos pequeños -->
+    <a class="navbar-brand" routerLink="/">Tienda Online</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    
-    <!-- Menú desplegable -->
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <!-- Enlace a la sección de productos -->
-          <a class="nav-link" href="/products">Productos</a>
+          <a class="nav-link" routerLink="/products">Productos</a>
         </li>
         <li class="nav-item">
-          <!-- Enlace al carrito -->
-          <a class="nav-link" href="/cart">Carrito</a>
+          <a class="nav-link" routerLink="/cart">Carrito</a>
         </li>
       </ul>
-      
-      <!-- Barra de búsqueda -->
       <form class="d-flex">
         <input class="form-control me-2" type="search" placeholder="Buscar productos..." aria-label="Search">
         <button class="btn btn-outline-success" type="submit">Buscar</button>
