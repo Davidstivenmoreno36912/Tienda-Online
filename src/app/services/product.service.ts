@@ -7,7 +7,7 @@ import { Product } from '../models/product.model';
   providedIn: 'root'
 })
 export class ProductService {
-  private apiUrl = 'https://tienda-backend-lxqg.onrender.com'; // URL del backend API
+  private apiUrl = 'https://backend-41mc.onrender.com/products'; // URL del backend API
 
   constructor(private http: HttpClient) { }
 
