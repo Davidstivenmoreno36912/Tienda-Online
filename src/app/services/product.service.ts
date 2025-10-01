@@ -8,7 +8,11 @@ import { environment } from '../../environments/environment';
   providedIn: 'root'
 })
 export class ProductService {
-  private apiUrl = `${environment.apiUrl}/products`; // ahora sí usa environment
+
+
+// Después
+private apiUrl = `${environment.apiUrl}/api/products`; // apunta al router principal del backend
+
 
   constructor(private http: HttpClient) { }
 
